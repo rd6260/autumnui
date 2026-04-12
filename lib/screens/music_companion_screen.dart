@@ -285,7 +285,7 @@ class _MusicCompanionScreenState extends State<MusicCompanionScreen> {
               ),
               const SizedBox(height: 4),
               Text(
-                DateFormat('MM.dd EEEE').format(_currentTime),
+                DateFormat('dd.MM EEEE').format(_currentTime),
                 style: GoogleFonts.inter(
                   color: Colors.white.withValues(alpha: 0.7),
                   fontSize: 14,
@@ -409,7 +409,7 @@ class _MusicCompanionScreenState extends State<MusicCompanionScreen> {
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      DateFormat('MM.dd EEEE').format(_currentTime),
+                      DateFormat('dd.MM EEEE').format(_currentTime),
                       style: GoogleFonts.inter(
                         color: Colors.white.withValues(alpha: 0.7),
                         fontSize: 13,
