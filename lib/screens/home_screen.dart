@@ -1,6 +1,7 @@
 import 'package:autumnui/screens/grand_key_club_screen.dart';
 import 'package:autumnui/screens/music_companion_screen.dart';
 import 'package:autumnui/screens/neumorphic_design_1_screen.dart';
+import 'package:autumnui/screens/pinterest_screen.dart';
 import 'package:autumnui/screens/static_glow_element.dart';
 import 'package:flutter/material.dart';
 
@@ -32,6 +33,11 @@ class _HomeScreenState extends State<HomeScreen> {
       "screen": GrandKeyClubScreen(),
       "title": "Grand Key Club",
       "description": "Grand Key Club",
+    },
+    {
+      "screen": PinterestScreen(),
+      "title": "Pinterest Screen",
+      "description": "A pinterest style photo gallery",
     },
   ];
 
