@@ -31,6 +31,10 @@ class _MusicCompanionScreenState extends State<MusicCompanionScreen>
     'https://i.pinimg.com/originals/f0/34/24/f03424bd0298f06f09d9299e930abef3.gif',
     'https://i.pinimg.com/originals/5f/38/0e/5f380e2ecbf7d232a7d2e7092d53536d.gif',
     'https://i.pinimg.com/originals/39/53/72/3953725f59702c293be5e887d35196cb.gif',
+    'https://i.pinimg.com/originals/ab/54/94/ab5494ae1a83c52d72cded9a3a31d0eb.gif',
+    'https://i.pinimg.com/originals/29/1f/b2/291fb25f2395c226b8b8ff4b3f84ef4c.gif',
+    'https://i.pinimg.com/originals/55/c6/94/55c694230690258292e51904e80e38f4.gif',
+    
   ];
 
   int _gifIndex = 0;
@@ -141,7 +145,9 @@ class _MusicCompanionScreenState extends State<MusicCompanionScreen>
   }
 
   void _changeGif(int delta) {
-    final nextIndex = ((_gifIndex + delta) % _gifUrls.length + _gifUrls.length) % _gifUrls.length;
+    final nextIndex =
+        ((_gifIndex + delta) % _gifUrls.length + _gifUrls.length) %
+        _gifUrls.length;
     setState(() {
       _prevGifIndex = _gifIndex;
       _gifIndex = nextIndex;
@@ -423,14 +429,18 @@ class _MusicCompanionScreenState extends State<MusicCompanionScreen>
                           Icon(
                             Icons.image_not_supported,
                             size: 64,
-                            color: _colorScheme!.onPrimary.withValues(alpha: 0.5),
+                            color: _colorScheme!.onPrimary.withValues(
+                              alpha: 0.5,
+                            ),
                           ),
                           const SizedBox(height: 16),
                           Text(
                             'GIF unavailable',
                             textAlign: TextAlign.center,
                             style: GoogleFonts.inter(
-                              color: _colorScheme!.onPrimary.withValues(alpha: 0.7),
+                              color: _colorScheme!.onPrimary.withValues(
+                                alpha: 0.7,
+                              ),
                               fontSize: 16,
                             ),
                           ),
@@ -642,7 +652,7 @@ class _MusicCompanionScreenState extends State<MusicCompanionScreen>
               ),
               const SizedBox(width: 8),
               Text(
-                'CAFE MUSIC',
+                'R E V E R I E',
                 style: GoogleFonts.inter(
                   color: Colors.white.withValues(alpha: 0.9),
                   fontSize: 14,
@@ -757,7 +767,7 @@ class _MusicCompanionScreenState extends State<MusicCompanionScreen>
                           title,
                           style: GoogleFonts.poppins(
                             color: Colors.white.withValues(alpha: 0.95),
-                            fontSize: 16,
+                            fontSize: 18,
                             fontWeight: FontWeight.w600,
                           ),
                           maxLines: 1,
@@ -768,7 +778,7 @@ class _MusicCompanionScreenState extends State<MusicCompanionScreen>
                           '-$artist',
                           style: GoogleFonts.inter(
                             color: Colors.white.withValues(alpha: 0.8),
-                            fontSize: 14,
+                            fontSize: 16,
                             fontWeight: FontWeight.w500,
                           ),
                           maxLines: 1,
